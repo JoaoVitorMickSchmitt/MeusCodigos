@@ -1,22 +1,29 @@
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class exer5 {
 
 	public static void main(String[] args) {
 		
+		
+		double somaAltura = 0;
 		Scanner input = new Scanner(System.in);
-		DecimalFormat df =new DecimalFormat("0.00");
 		
-		System.out.println("qual o número do Funcionário?  ");
-		double numFuncionario =  input.nextDouble();
-		System.out.println("Quantidade de horas?  ");
-		double horasFun=  input.nextDouble();
-		System.out.println("valor das horas?  ");
-		double valorHora=  input.nextDouble();
+		for (int i = 0; i <5; i++) {
+			System.out.println("diga a altura da pessoa");
+			double altura = input.nextInt();
+			
 		
-		double qtdValor = (horasFun * valorHora);
-		System.out.println("o funcionário ganha " +df.format(qtdValor)+ "e o número dele é" +df.format(numFuncionario));
+			double	medialtura = (altura + altura +altura +altura + altura) ;
+				
+			
+			 somaAltura= somaAltura + (altura / 5);
+			
+		} 
+		
+			System.out.println(somaAltura);
+		
+		
+
 	}
 
 }
